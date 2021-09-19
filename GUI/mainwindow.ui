@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="Select_View_Tab">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>471</width>
+      <height>376</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Table_View_tab">
+     <attribute name="title">
+      <string>Measurements_1</string>
+     </attribute>
+     <widget class="QGroupBox" name="Sensors_Values_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>461</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>201</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Sensor Values:</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="Outputs_Values_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>255</y>
+        <width>461</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs Values:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Virtual_Calib_Table_View_tab">
+     <attribute name="title">
+      <string>Measurements_2</string>
+     </attribute>
+     <widget class="QGroupBox" name="virtual_calib_measurements_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>35</y>
+        <width>451</width>
+        <height>276</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sensors Measurements (using virtual calibration) :</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="enable_virtual_calib_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>291</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable measurements using virtual calibration.</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="View_Diagram_Sensors_tab">
+     <attribute name="title">
+      <string>Sensors Graphic View</string>
+     </attribute>
+     <widget class="QGroupBox" name="Sensors_Graphic_View_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>441</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Sensors Graphic View:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Counters_Virtual_Calib_tab">
+     <attribute name="title">
+      <string>Measurements_3</string>
+     </attribute>
+     <widget class="QCheckBox" name="enable_counters_virtual_calibs_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>361</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enable measurements using counters virtual calibration.</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="counters_virtual_calibs_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>461</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Measurements_total (using counters virtual calibration):</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="USB_Connect_Status_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Connect:</string>
+    </property>
+    <widget class="QLabel" name="USB_status_display">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Not Connected</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Connect_LCR_Board_Button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="select_type_values_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>131</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Read Type:</string>
+    </property>
+    <widget class="QRadioButton" name="RAW_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RAW Values</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="measured_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Measured Values</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Reading_Mode">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Reading Mode:</string>
+    </property>
+    <widget class="QPushButton" name="Update_Values_Now_Button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Read Sensor Now</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="Select_Continuous_Read_CheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Continuous Read</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="select_multiple_CH_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>80</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Select multiple CH or single CH:</string>
+    </property>
+    <widget class="QComboBox" name="select_CH_mode_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>181</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="select_CH_spinBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_mode_CH_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Reset_Counters">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>.</string>
+    </property>
+    <widget class="QPushButton" name="Reset_Counters_Now_Button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset Counters Now</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="protocol_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Connection type:</string>
+    </property>
+    <widget class="QRadioButton" name="USB_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>USB</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="serial_radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>91</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Serial Port :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="serial_port_name_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COM3</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="board_ID_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>255</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="board_ID_label">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="connect_status_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Connection Status:</string>
+    </property>
+    <widget class="QLabel" name="connect_status_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>613</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Download_Device_Calibrations"/>
+    <addaction name="action_Upload_Device_Calibrations"/>
+    <addaction name="action_Import_Device_Calibrations"/>
+    <addaction name="action_Export_Device_Calibrations"/>
+    <addaction name="action_Import_Virtual_Calibrations"/>
+    <addaction name="action_Export_Virtual_Calibrations"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_About">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_Show_Error_Log"/>
+    <addaction name="action_Show_User_Guide"/>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_About"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="action_Download_Device_Calibrations">
+   <property name="text">
+    <string>&amp;Download Device Calibrations</string>
+   </property>
+  </action>
+  <action name="action_Upload_Device_Calibrations">
+   <property name="text">
+    <string>&amp;Upload Device Calibrations</string>
+   </property>
+  </action>
+  <action name="action_Import_Device_Calibrations">
+   <property name="text">
+    <string>&amp;Import Device Calibrations</string>
+   </property>
+  </action>
+  <action name="action_Export_Device_Calibrations">
+   <property name="text">
+    <string>&amp;Export Device Calibrations</string>
+   </property>
+  </action>
+  <action name="action_Import_Virtual_Calibrations">
+   <property name="text">
+    <string>&amp;Import Virtual Calibrations</string>
+   </property>
+  </action>
+  <action name="action_Export_Virtual_Calibrations">
+   <property name="text">
+    <string>&amp;Export Virtual Calibrations</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="action_Show_Error_Log">
+   <property name="text">
+    <string>&amp;Error Log</string>
+   </property>
+  </action>
+  <action name="action_Show_User_Guide">
+   <property name="text">
+    <string>&amp;User Guide</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Connect_LCR_Board_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Connect_LCR_Board()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

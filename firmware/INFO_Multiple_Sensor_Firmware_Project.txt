@@ -1,0 +1,23 @@
+
+FILES TO USE WITH PIC18F2550 / PIC18F4550:
+
+SOURCE CODE FILE:
+"HardwareProfile - PICDEM FSUSB.h"
+"HardwareProfile.h"
+"usb_config.h"
+"usb_descriptors.c"
+"main.c"
+-------------------------------------------------
+
+OTHER/PROJECT FILES:
+"USB Device - HID - Simple Custom Demo - C18 - PICDEM FSUSB.mcp"
+"USB Device - HID - Simple Custom Demo - C18 - PICDEM FSUSB.mcs"
+"rm18f4550 - HID Bootload.lkr"
+"rm18f4550 - MCHPUSB Bootload.lkr"
+-------------------------------------------------
+
+OUTPUT FILES:
+"USB Device - HID - Simple Custom Demo - C18 - PICDEM FSUSB.cof"
+"USB Device - HID - Simple Custom Demo - C18 - PICDEM FSUSB.hex"
+"USB Device - HID - Simple Custom Demo - C18 - PICDEM FSUSB.map"
+-------------------------------------------------

@@ -1,0 +1,8 @@
+
+About Multiple-Sensor Interface
+
+- Multiple-Sensor Interface is very versatile RTU (remote terminal unit) developed by David Nuno Quelhas (Lisboa, Portugal).
+- Multiple-Sensor Interface is intended to allow the interface to a large variety of sensors using the same electronic signal interface, being the calibration data table the only difference between sensor that operate through different electrical parameters.
+- This device has multiple channels for the measurement (or at least the estimation) of electrical resistance, capacitance, inductance, frequency, and analogue voltage (0V; 4V). Also has 2 output channels that can trigger other devices / systems.
+- The device allows to save calibration tables and configurations for each sensor channel and so the reading of measurement values.
+- The device interfaces to the user by USB and serial port (RS485 or TTL serial). The USB driver and Modbus serial driver is available for the user to integrate to its own software applications and so develop it own applications.

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>licenses/gplv3.txt</file>
+        <file>licenses/lgplv3.txt</file>
+        <file>images/about.png</file>
+        <file>licenses/CC-by-sa-4_legalcode.txt</file>
+        <file>licenses/about_device.txt</file>
+        <file>images/balance_icon.png</file>
+        <file>images/config_icon.png</file>
+        <file>images/flowchart_multiple_sensor.png</file>
+        <file>images/multiple_sensor_logo_(no_background).png</file>
+        <file>images/PC_sensor_calib.png</file>
+        <file>images/square_wave_icon.png</file>
+        <file>images/virtual_calib_icon.png</file>
+        <file>images/ID_icon.png</file>
+        <file>images/logo-gnu-linux-GPL-3-0.png</file>
+        <file>licenses/cern_ohl_w_v2.txt</file>
+    </qresource>
+</RCC>
